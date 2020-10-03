@@ -10,15 +10,33 @@ body{
     width: 100%;
     height: 100px;
     text-align: center;
+    position: relative;
 }
 #tabelaMenu {
     color: aliceblue;
     width: 100px;
     height: 100px;
-    left: 42%;
-    position: relative;
+    left: 40%;
+    position: absolute;
+    transform: translate(4%, 20%);
     
 }
+#tabelaMenu table{
+    padding: 5px;
+    text-align: center;
+}
 #paginaUm {
-    background-color: brown;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    width: 100%;
+    height: 600px;
+}
+#paginaDois {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    width: 100%;
+    height: 600px;
+}
+#paginaDois h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 17px;
 }
