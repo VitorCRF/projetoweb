@@ -40,3 +40,51 @@ body{
     margin: 0px;
     padding-top: 17px;
 }
+#paginaTres {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    width: 100%;
+    height: 600px;
+}
+#paginaTres h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 17px;
+}
+#video {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    margin: 0 auto;
+    width: 50%;
+    height: 360px;
+    text-align: center;
+}
+#paginaQuatro {
+    background-image: linear-gradient(120deg, #ac8ea3 0%, #7aa8fd 100%);
+    width: 100%;
+    height: 600px;
+}
+#depoimento {
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    position: absolute;
+}
+#depoimento p {
+    text-align: center;
+}
+#contato {
+    margin-top: 310px;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    position: absolute;
+}
+#contato p {
+    text-align: center;
+}
+#rodape {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: #d3d3d3;
+}
