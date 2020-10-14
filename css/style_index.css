@@ -1,0 +1,186 @@
+
+.html-style{
+    background-color: #ffc1bb;
+}
+
+/* Divs style */ 
+.div-navbar{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.divIconsNavBar{
+    width: 50px;
+    height: 80px;
+    float: right;
+    cursor: pointer;
+}
+
+.divCarouselItem{
+    width: 100px;
+    height: 100px;
+    background-color: #f77062;
+    position: relative;
+    margin: auto;
+}
+
+.div-body{
+    width: 100%;
+}
+
+.div-best-sellers{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.div-video-demonstracao{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.div-depoimentos{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.div-endereco-contato{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.div-rodape{
+    margin: auto;
+    width: 95%;
+    height: 200px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    border-radius: 15px;
+}
+
+/* Tables style */
+.tr-social-media{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+/* Icons style */
+.icon-navbar{
+    margin-top: 15px;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.icon-redes-sociais{
+
+}
+
+
+
+
+/* Images style */
+.imagem-logo{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* Button styles */
+.botao-cadastro{
+    width: 120px;
+    height: 45px;
+    background-color: crimson;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: arial;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-cadastro:hover{
+    background-color: rgb(228, 74, 105);
+}
+
+.botao-mais-produtos{
+    width: 150px;
+    height: 60px;
+    background-color: crimson;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-mais-produtos:hover{
+    background-color: rgb(228, 74, 105);
+}
+
+
+/* Text styles */
+
+.titulo-mais-vendidos{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.texto-rodape{
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Carrossel style */
+
+.carousel{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.carousel .carousel-img{
+    transform: scale(0.6);
+    transition: 0.5s;
+    outline: none !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.carousel .carousel-img.slick-center{
+    transform: scale(1);
+}
+
+.botao-setas{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.botao-setas:hover{
+    cursor: pointer;
+}
