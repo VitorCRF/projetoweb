@@ -34,6 +34,21 @@
 .div-best-sellers{
     width: 100%;
     margin-top: 60px;
+    text-align: center;
+}
+
+.container-best-sellers{
+    text-align: center;
+}
+
+.best-seller{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fe5196;
+    border-radius: 15px;
 }
 
 .div-video-demonstracao{
@@ -44,6 +59,7 @@
 .div-depoimentos{
     width: 100%;
     margin-top: 60px;
+    text-align: center;
 }
 
 .div-endereco-contato{
@@ -61,11 +77,23 @@
     border-radius: 15px;
 }
 
+.depoimento{
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #fe5196;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
 /* Tables style */
 .tr-social-media{
     padding-top: 20px;
 }
-
 
 
 
@@ -90,6 +118,18 @@
 .imagem-logo{
     margin-left: 5px;
     margin-top: 5px;
+}
+
+.imagem-depoimentos{
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+.imagem-best-seller{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 /* Button styles */
@@ -121,6 +161,7 @@
     font-family: arial;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 .botao-mais-produtos:hover{
@@ -129,10 +170,16 @@
 
 
 /* Text styles */
-
 .titulo-mais-vendidos{
     font-weight: bold;
     font-size: 45px;
+}
+
+.titulo-best-seller{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
 }
 
 .texto-rodape{
@@ -141,12 +188,25 @@
     font-weight: bold;
 }
 
+.titulo-depoimento{
+    font-family: arial;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.texto-depoimento{
+    font-family: arial;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
 
 /* Carrossel style */
-
 .carousel{
-    width: 400px;
-    height: 500px;
+    width: 360px;
+    height: 450px;
     margin: auto;
     align-items: center;
     
