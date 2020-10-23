@@ -1,39 +1,59 @@
-<html >
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style_index.css">
-        
-        <!-- Bootstrap CSS -->
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="javascript/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/style_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
         <!-- CSS Slicker (carrossel)-->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-    </head>
-
-    <body class="html-style">
-        <div>
-
-            <div class="div-navbar">
-                <nav>
-
-                <a href="index.html"><img src="img/logo.png" alt="logo" width="70px" height="70px" class="imagem-logo"></a>
-
-                    <img>
-                
-                    <img src="img/search icon.png" alt="search" width="50px" height="50px" class="icon-navbar">
-            
-                    <img src="img/user icon.png" alt="user/login" width="60px" height="50px" class="icon-navbar">
-            
-                </nav>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+</head>
+<body>
+    <header id="header">Olá mundo</header>
+    <div id="menu">
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" width="70px" height="70px" class="imagem-logo"></a>
+        </div>
+            <table align="center" id="tabelaMenu">
+                <tr>
+                    <td>
+                        <p href="#">PRODUTOS</p>
+                    </td>
+                    <td>
+                        <p href="#">DEPOIMENTOS</p>
+                    </td>
+                    <td>
+                        <p href="#">SERVIÇOS</p>
+                    </td>
+                    <td>
+                        <p href="#">SOBRE</p>
+                    </td>
+                </tr>          
+            </table>
+            <div id="buscaEicones">
+                <table id="tabelaIcones" cellspacing="0" align="right">
+                    <tr>
+                        <td>
+                            <input type="text" name="busca" id="busca" placeholder="Pesquisar..">
+                        </td>
+                        <td class="divIconsNavBar">
+                            
+                         <img src="img/search icon.png" alt="search" width="40px" height="40px" class="icon-navbar">
+                        </td>
+                        <td class="divIconsNavBar">
+                                <img src="img/user icon.png" alt="user/login" width="45px" height="45px" class="icon-navbar">
+                            </td>
+                        
+                    </tr>
+                </table>
             </div>
-
-            <div class="div-body">
-
-                <div class="carousel" id="carousel">
+    </div>
+    <div id="paginaUm">
+        <div class="carousel" id="carousel">
 
                     <!--itens do carrossel-->
 
@@ -48,7 +68,6 @@
                     <img class="carousel-img">
     
                 </div>
-    
                 <div class="div-table">
     
                     <table align="center" cellpadding="10" id="table-carousel">
@@ -65,9 +84,11 @@
     
                 </div>
 
-                <div class="div-best-sellers">
 
-                    <h1 class="titulo-mais-vendidos" align="center">Mais vendidos</h1>
+    </div>
+    <div id="paginaDois">
+        <div class="div-best-sellers">
+        <h1 class="titulo-mais-vendidos" align="center">Mais vendidos</h1>
 
                     <div class="container-best-sellers" >
 
@@ -95,18 +116,18 @@
                     </div>
 
                     <button id="buttonMaisProdutos" class="botao-mais-produtos">Mais Produtos</button>
-
                 </div>
-
-                <div class="div-video-demonstracao">
-
-                    <h2 class="titulo-mais-vendidos" align="center">Video Demonstrativo</h2>
-
-                </div>
-
-                <div class="div-depoimentos">
-
-                    <h2 class="titulo-mais-vendidos" align="center">Depoimentos</h2>
+    </div>
+    <div id="paginaTres">
+        <h1>Titulo (Demostração dos produtos)</h1>
+        <div id="video">
+            <p>Área para inserir o vídeo</p>
+        </div>
+    </div>
+    <div id="paginaQuatro">
+        <div class="div-depoimentos">
+            <div id="depoimento">
+             <h2 class="titulo-mais-vendidos" align="center">Depoimentos</h2>
 
                     <br><br>
 
@@ -130,19 +151,11 @@
                         <br>
                         <p class="texto-depoimento">Descrição do depoimento............. ....................</p>
                     </div>
-
-                </div>
-
-                <div class="div-endereco-contato">
-
-                    <h2 class="titulo-mais-vendidos" align="center">Sobre</h2>
-
-                </div>
-
-                <div class="div-rodape">
-
-                    <br><br>
-                    <table align="center" cellpadding="10">
+            </div>
+        </div>
+    </div>
+    <div id="contato">    
+        <table align="center" cellpadding="10">
 
                         <tr align="center">
                             <td><a href=""><img src="img/github-icon.png" alt="github" width="50px" height="50px"></a></td>
@@ -153,17 +166,10 @@
                     </table>
 
                     <br>
-                    <p class="texto-rodape" align="center">2020. Programação Web, Bacharelado em Sistemas de Informação, PUCPR.</p>
 
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-    <!--javascript bootstrap-->
+    </div>
+    <footer id="rodape">2020. Programação Web, Bacharelado em Sistemas de Informação, PUCPR.</footer>
+     <!--javascript bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -173,6 +179,5 @@
 
     <!--javasrcipt Slicker (carrossel)-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    </body>
+</body>
 </html>

@@ -1,24 +1,53 @@
-
-.html-style{
+body{
+    margin: 0;
+    font-family: Roboto;
+}
+#header{
     background-color: #ffc1bb;
+    text-align: center;
 }
-
-/* Divs style */ 
-.div-navbar{
+#menu {
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    border-radius: 10px;
-    margin-top: 10px;
+    position: absolute;
+
 }
 
-.divIconsNavBar{
-    width: 50px;
+#logo {
+    width: 80px;
     height: 80px;
-    float: right;
+    position: absolute;
+
+    margin-left: 7%;
+    margin-top: 9.6px;
+}
+.divIconsNavBar{
     cursor: pointer;
 }
 
+#buscaEicones {
+    width: 140px;
+    height: 40px;
+    margin: -54 80%;
+    position: relative;
+}
+#busca {
+    width: 150px;
+    height: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #CCC;
+    font-family: Arial;
+    border-radius: 30px;
+}
+#tabelaMenu {
+    
+    margin-top: 35px;
+
+}
 .divCarouselItem{
     width: 100px;
     height: 100px;
@@ -27,111 +56,11 @@
     margin: auto;
 }
 
-.div-body{
-    width: 100%;
-}
-
-.div-best-sellers{
-    width: 100%;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.container-best-sellers{
-    text-align: center;
-}
-
-.best-seller{
-    width: 350px;
-    height: 300px;
-    position: relative;
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #fe5196;
-    border-radius: 15px;
-}
-
-.div-video-demonstracao{
-    width: 100%;
-    margin-top: 60px;
-}
-
-.div-depoimentos{
-    width: 100%;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.div-endereco-contato{
-    width: 100%;
-    margin-top: 60px;
-}
-
-.div-rodape{
-    margin: auto;
-    width: 95%;
-    height: 200px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    border-radius: 15px;
-}
-
-.depoimento{
-    width: 300px;
-    height: 350px;
-    margin: 0 auto;
-    display: inline-block;
-    background-color: #fe5196;
-    border-radius: 15px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-
-
-/* Tables style */
-.tr-social-media{
-    padding-top: 20px;
-}
-
-
-
-
-
-/* Icons style */
-.icon-navbar{
-    margin-top: 15px;
-    float: right;
-    margin-right: 20px;
+table tr td p{
+    text-decoration: none;
+    color: whitesmoke;
     cursor: pointer;
 }
-
-.icon-redes-sociais{
-
-}
-
-
-
-
-/* Images style */
-.imagem-logo{
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-.imagem-depoimentos{
-    border-radius: 100%;
-    margin-top: 5px;
-}
-
-.imagem-best-seller{
-    margin: 0 auto;
-    position: relative;
-    margin-top: 15px;
-    border-radius: 10px;
-}
-
 /* Button styles */
 .botao-cadastro{
     width: 120px;
@@ -149,7 +78,6 @@
 .botao-cadastro:hover{
     background-color: rgb(228, 74, 105);
 }
-
 .botao-mais-produtos{
     width: 150px;
     height: 60px;
@@ -164,11 +92,118 @@
     margin-top: 25px;
 }
 
+
 .botao-mais-produtos:hover{
     background-color: rgb(228, 74, 105);
 }
 
+#paginaUm {
 
+    background-color: #ffc1bb;
+    width: 100%;
+    height: 600px;
+}
+#paginaDois {
+    background-color: #ffc1bb;
+    width: 100%;
+    height: 600px;
+}
+.div-best-sellers{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    position: absolute;
+}
+.container-best-sellers{
+    text-align: center;
+}
+
+.best-seller{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fe5196;
+    border-radius: 15px;
+}
+
+#paginaTres {
+    background-color: #ffc1bb;
+    width: 100%;
+    height: 600px;
+}
+#paginaTres h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 17px;
+}
+#video {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    margin: 0 auto;
+    width: 50%;
+    height: 360px;
+    text-align: center;
+}
+#paginaQuatro {
+    background-color: #ffc1bb;
+    width: 100%;
+    height: 600px;
+}
+.div-depoimentos{
+    width: 100%;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+}
+.depoimento{
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #fe5196;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.titulo-depoimento{
+    font-family: arial;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.texto-depoimento{
+    font-family: arial;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#contato {
+
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+
+}
+#rodape {
+    width: 100%;
+
+    text-align: center;
+    background-color: #d3d3d3;
+}
+/* Tables style */
+.tr-social-media{
+    padding-top: 20px;
+}
+
+/* Images style */
+.imagem-logo{
+    margin-left: 5px;
+    margin-top: 5px;
+}
 /* Text styles */
 .titulo-mais-vendidos{
     font-weight: bold;
@@ -208,6 +243,7 @@
     width: 360px;
     height: 450px;
     margin: auto;
+    margin-top: 75px;
     align-items: center;
     
 }
@@ -222,6 +258,8 @@
     position: relative;
     padding-top: 50px;
 }
+
+
 
 .carousel .carousel-img.slick-center{
     transform: scale(1);
