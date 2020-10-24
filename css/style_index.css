@@ -13,7 +13,10 @@ body{
     position: absolute;
 
 }
+.div-table{
 
+
+}
 #logo {
     width: 80px;
     height: 80px;
@@ -29,7 +32,7 @@ body{
 #buscaEicones {
     width: 140px;
     height: 40px;
-    margin: -54 80%;
+    margin: -48 80%;
     position: relative;
 }
 #busca {
@@ -47,6 +50,7 @@ body{
     
     margin-top: 35px;
 
+
 }
 .divCarouselItem{
     width: 100px;
@@ -58,7 +62,7 @@ body{
 
 table tr td p{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 /* Button styles */
@@ -258,7 +262,6 @@ table tr td p{
     position: relative;
     padding-top: 50px;
 }
-
 
 
 .carousel .carousel-img.slick-center{
