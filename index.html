@@ -1,6 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="javascript/jquery-3.5.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/style_index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
      <!-- Bootstrap CSS -->
@@ -12,25 +13,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Inicial</title>
 </head>
-<body>
+<body id="body">
     <header id="header">Olá mundo</header>
     <div id="menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
         <div id="logo">
             <a href="index.html"><img src="img/logo.png" alt="logo" width="70px" height="70px" class="imagem-logo"></a>
         </div>
             <table align="center" id="tabelaMenu">
                 <tr>
                     <td>
-                        <p href="#">PRODUTOS</p>
+                        <a href="#">PRODUTOS</a>
                     </td>
                     <td>
-                        <p href="#">DEPOIMENTOS</p>
+                        <a href="#">DEPOIMENTOS</a>
                     </td>
                     <td>
-                        <p href="#">SERVIÇOS</p>
+                        <a href="#">SERVIÇOS</a>
                     </td>
                     <td>
-                        <p href="#">SOBRE</p>
+                        <a href="#">SOBRE</a>
                     </td>
                 </tr>          
             </table>
@@ -83,8 +88,6 @@
                     </table>
     
                 </div>
-
-
     </div>
     <div id="paginaDois">
         <div class="div-best-sellers">
@@ -124,9 +127,9 @@
             <p>Área para inserir o vídeo</p>
         </div>
     </div>
-    <div id="paginaQuatro">
+    
         <div class="div-depoimentos">
-            <div id="depoimento">
+            <div id="depoimento"></div>
              <h2 class="titulo-mais-vendidos" align="center">Depoimentos</h2>
 
                     <br><br>
@@ -153,7 +156,7 @@
                     </div>
             </div>
         </div>
-    </div>
+   
     <div id="contato">    
         <table align="center" cellpadding="10">
 
