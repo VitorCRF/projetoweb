@@ -1,37 +1,35 @@
-#body{
-    margin: 0;
+
+.html-style{
+    background-color: #ffc1bb;
+}
+*{
+    text-decoration: none;
+    list-style: none;
     font-family: Roboto;
-    background-color: #ffc1bb;
 }
-#header{
-    background-color: #ffc1bb;
+ul li a{
+    float: left;
+    text-decoration: none;
     text-align: center;
+    display: block;
+    padding: 7px 6px;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
 }
-#menu {
-    width: 100%;
-    height: 100px;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    position: absolute;
-
-}
-
-#logo {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-
-    margin-left: 7%;
-    margin-top: 9.6px;
-}
-.divIconsNavBar{
+ul li a:hover{
+    text-decoration: none;
+    background-image: linear-gradient(to top, rgb(253, 78, 148) 0%, #fc796a 100%);
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    transition: .5s;
 }
-
 #buscaEicones {
-    width: 140px;
+    width: 440px;
     height: 40px;
-    margin: -42 84%;
-    position: relative;
+    margin: 25 62%;
+    border: 0;
+    position: absolute;
+
 }
 #busca {
     width: 200px;
@@ -44,12 +42,46 @@
     font-family: Arial;
     border-radius: 30px;
 }
-#tabelaMenu {
-    
-    margin-top: 35px;
-
-
+#header{
+    background-color: #ffc1bb;
+    text-align: center;
 }
+#logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+
+    margin-left: 7%;
+    margin-top: 9.6px;
+}
+
+/* Divs style */ 
+
+#menu{
+    width: 560px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    margin-left: 28%;
+    margin-top: 29px;
+    
+}
+#video {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    margin: 0 auto;
+    width: 50%;
+    height: 360px;
+    text-align: center;
+}
+.div-navbar{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+
+    
+}
+
+
 
 .divCarouselItem{
     width: 100px;
@@ -59,47 +91,107 @@
     margin: auto;
 }
 
-table tr td a{
-    float: right;
-    text-decoration: none;
+.div-body{
+    width: 100%;
+}
+
+.div-best-sellers{
+    width: 100%;
+    margin-top: 60px;
     text-align: center;
-    display: block;
-    padding: 7px 6px;
-    color: rgb(255, 255, 255);
-    border-radius: 3px;
 }
-table tr td a:hover{
-    text-decoration: none;
-    background-image: linear-gradient(to top, rgb(253, 78, 148) 0%, #fc796a 100%);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    transition: .5s;
+
+.container-best-sellers{
+    text-align: center;
 }
-table tr td a.active{
-    background-image: linear-gradient(to top, rgb(253, 78, 148) 0%, #fc796a 100%);
-    transition: .5s;
+
+.best-seller{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fe5196;
+    border-radius: 15px;
 }
+
+.div-video-demonstracao{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.div-depoimentos{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.div-endereco-contato{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.div-rodape{
+    margin: auto;
+    width: 95%;
+    height: 200px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    border-radius: 15px;
+}
+
+.depoimento{
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #fe5196;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+/* Tables style */
+.tr-social-media{
+    padding-top: 20px;
+}
+
+
+
+
+
+/* Icons style */
+
+
+.icon-redes-sociais{
+
+}
+
+
+
+
+/* Images style */
+.imagem-logo{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.imagem-depoimentos{
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+.imagem-best-seller{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
 /* Button styles */
-.checkbtn{
-    font-size: 35px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 20px;
-    margin-top: 35px;
-    cursor: pointer;
-    display: none;
-    
-}
-#check{
-    display: none;
-}
-@media(max-width: 800px){
-    #menu table {
-        width: 100%;
-        float: left;
-    }
-}
 .botao-cadastro{
     width: 120px;
     height: 45px;
@@ -116,6 +208,7 @@ table tr td a.active{
 .botao-cadastro:hover{
     background-color: rgb(228, 74, 105);
 }
+
 .botao-mais-produtos{
     width: 150px;
     height: 60px;
@@ -130,122 +223,14 @@ table tr td a.active{
     margin-top: 25px;
 }
 
-
 .botao-mais-produtos:hover{
     background-color: rgb(228, 74, 105);
 }
-
-#paginaDois {
-    background-color: #ffc1bb;
-    width: 100%;
-    
-}
-.div-best-sellers{
-    width: 100%;
-    margin-top: 60px;
-    text-align: center;
-    
-}
-.container-best-sellers{
-    position: relative;
-    text-align: center;
+#div-table{
+    margin-top: 96px;
 }
 
-.best-seller{
-    width: 350px;
-    height: 300px;
-    position: relative;
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #fe5196;
-    border-radius: 15px;
-}
 
-#paginaTres {
-    background-color: #ffc1bb;
-    width: 100%;
-    height: 600px;
-    position: relative;
-}
-#paginaTres h1{
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 17px;
-}
-#video {
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    margin: 0 auto;
-    width: 50%;
-    height: 360px;
-    text-align: center;
-}
-
-.div-depoimentos{
-    width: 100%;
-    margin: 60px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: -45px;
-    position: relative;
-    text-align: center;
-    
-}
-.depoimento{
-    width: 300px;
-    height: 350px;
-    margin: 0 auto;
-    display: inline-block;
-    background-color: #fe5196;
-    border-radius: 15px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-.titulo-depoimento{
-    font-family: arial;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.texto-depoimento{
-    font-family: arial;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
-}
-#contato {
-    width: 100%;
-    height: 90px;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    position: relative;
-
-}
-#rodape {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    background-color: #d3d3d3;
-}
-/* Tables style */
-.tr-social-media{
-    padding-top: 20px;
-}
-
-/* Images style */
-.imagem-logo{
-    margin-left: 5px;
-    margin-top: 5px;
-}
-.imagem-depoimentos{
-    width: 105px;
-    height: 105px;
-    border-radius: 100%;
-    margin-top: 8px;
-}
 /* Text styles */
 .titulo-mais-vendidos{
     font-weight: bold;
@@ -285,7 +270,6 @@ table tr td a.active{
     width: 360px;
     height: 450px;
     margin: auto;
-    margin-top: 75px;
     align-items: center;
     
 }
@@ -298,9 +282,8 @@ table tr td a.active{
     height: 100%;
     border-radius: 10px;
     position: relative;
-    padding-top: 50px;
+    margin-top: 80px;
 }
-
 
 .carousel .carousel-img.slick-center{
     transform: scale(1);
