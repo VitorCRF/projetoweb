@@ -45,6 +45,7 @@ a.active, ul li a:hover{
     cursor: pointer;
 }
 
+
 #header{
     background-color: #ffc1bb;
     text-align: center;
@@ -335,12 +336,12 @@ nav{
     }
     #logo{
         margin-left: 75px;
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         margin-top: -88px;
     }
     #icones{
-        margin-left: 50px;
+        margin-left: 20px;
         margin-top: -70px;
     }
 
