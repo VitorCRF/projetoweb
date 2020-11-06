@@ -1,201 +1,214 @@
-<html >
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style_index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS Slicker (carrossel)-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body class="html-style">
+    <header id="header">Olá mundo</header>
+
+    <nav>
         
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-        <!-- CSS Slicker (carrossel)-->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-    </head>
-
-    <body class="html-style">
-        <header id="header">Olá mundo</header>
-        
-            
-            <div class="div-navbar">
+        <label for="toggle" id="label">&#9776</label>
+        <input type="checkbox" id="toggle"/>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" width="70px" height="70px" class="imagem-logo"></a>
+        </div>
+            <ul>
+                <li><a class="active" id="home" href="#">HOME</a></li>
+                <li><a href="#" id="produtos">PRODUTOS</a></li>
+                <li><a href="#" id="depoimentos">DEPOIMENTOS</a></li>
+                <li><a href="#" id="servicos">SERVIÇOS</a></li>
                 
-                <div id="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="logo" width="70px" height="70px" class="imagem-logo"></a>
-                </div>
-                <div id="menu">
-                    <ul>
-                        <li><a href="#">PRODUTOS</a></li>
-                        <li><a href="#">DEPOIMENTOS</a></li>
-                        <li><a href="#">SERVIÇOS</a></li>
-                        <li><a href="#">SOBRE</a></li>
-                    </ul>
+            </ul>  
 
-                </div>
-                
-                   <div id="buscaEicones">
-                        <table id="tabelaIcones" cellspacing="0" align="right" >
-                    <tr>
-                        <td>
-                            <input type="text" name="busca" id="busca" placeholder="Pesquisar..">
-                        </td>
-                        <td class="divIconsNavBar">
-                            
-                         <img src="img/search icon.png" alt="search" width="40px" height="40px" class="icon-navbar">
-                        </td>
-                        <td class="divIconsNavBar">
-                                <img src="img/user icon.png" alt="user/login" width="45px" height="45px" class="icon-navbar">
-                        </td>
-                        <td class="divIconsNavBar">
-                                <img src="img/carrinho icon.png" alt="user/login" width="45px" height="45px" class="icon-navbar">
-                        </td>
-                    </tr>
-                </table>
-                    </div>
-            </div>
 
-            <div class="div-body">
+        <div id="icones">
+            <table id="tabelaIcones" cellspacing="0" align="right">
+                <tr>
+                    <td class="divIconsNavBar">
+                        <img src="img/user icon.png" alt="user/login" width="45px" height="45px" class="icon-navbar">
+                    </td>
+                    <td class="divIconsNavBar">
+                        </a><img src="img/carrinho icon.png" alt="carrinho" width="45px" height="45px"
+                            class="icon-navbar">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </nav>
 
-                <div class="carousel" id="carousel">
+    <div class="div-body">
 
-                    <!--itens do carrossel-->
+        <div class="carousel" id="carousel">
 
-                    <img class="carousel-img" data-name="Cake Site Template" alt="Cake Site Template">
+            <!--itens do carrossel-->
 
-                    <img class="carousel-img">
+            <img class="carousel-img" data-name="Cake Site Template" alt="Cake Site Template">
 
-                    <img class="carousel-img">
+            <img class="carousel-img">
 
-                    <img class="carousel-img">
+            <img class="carousel-img">
 
-                    <img class="carousel-img">
-    
-                </div>
-    
-                <div class="div-table">
-    
-                    <table align="center" cellpadding="10" id="table-carousel">
-                        <tr>
-                            <td><button id="seta-prev" class="botao-setas"> < </button></td>
-                            <td align="center"><a href=""><button id="botaoCadastro" class="botao-cadastro">Cadastre-se</button></a></td>
-                            <td><button id="seta-next" class="botao-setas"> > </button></td>
-                        </tr>
-                        <tr>
-                            <td colspan="1"></td>
-                            <td align="center"><p id="precoProduto" class="texto-preco-produto"></p></td>
-                        </tr>
-                    </table>
-    
-                </div>
+            <img class="carousel-img">
 
-                <div class="div-best-sellers">
+            <img class="carousel-img">
 
-                    <h1 class="titulo-mais-vendidos" align="center">Mais vendidos</h1>
+        </div>
 
-                    <div class="container-best-sellers" >
+        <div class="div-table">
 
-                        <div class="best-seller">
+            <table align="center" cellpadding="10" id="table-carousel">
+                <tr>
+                    <td><button id="seta-prev" class="botao-setas">
+                            < </button>
+                    </td>
+                    <td align="center"><a href=""><button id="botaoCadastro"
+                                class="botao-cadastro">Cadastre-se</button></a></td>
+                    <td><button id="seta-next" class="botao-setas"> > </button></td>
+                </tr>
+                <tr>
+                    <td colspan="1"></td>
+                    <td align="center">
+                        <p id="precoProduto" class="texto-preco-produto"></p>
+                    </td>
+                </tr>
+            </table>
 
-                            <h1 class="titulo-best-seller" align="center">Cake Site Template</h1>
-                            <img width="300px" height="200px" alt="Cake site template" src="img/cake-site-template-img.PNG" class="imagem-best-seller">
+        </div>
 
-                        </div>
+        <div class="div-best-sellers">
 
-                        <div class="best-seller">
+            <h1 class="titulo-mais-vendidos" align="center">Mais vendidos</h1>
 
-                            <h1 class="titulo-best-seller" align="center">Titulo Mais Vendido</h1>
-                            <img width="300px" height="200px" alt="Cake site template" src="img/cake-site-template-img.PNG" class="imagem-best-seller">
-                            
-                        </div>
+            <div class="container-best-sellers">
 
-                        <div class="best-seller">
+                <div class="best-seller">
 
-                            <h1 class="titulo-best-seller" align="center">Titulo Mais Vendido</h1>
-                            <img width="300px" height="200px" alt="Cake site template" src="img/cake-site-template-img.PNG" class="imagem-best-seller">
-                            
-                        </div>
-
-                    </div>
-
-                    <button id="buttonMaisProdutos" class="botao-mais-produtos">Mais Produtos</button>
+                    <h1 class="titulo-best-seller" align="center">Cake Site Template</h1>
+                    <img width="300px" height="200px" alt="Cake site template" src="img/cake-site-template-img.PNG"
+                        class="imagem-best-seller">
 
                 </div>
 
-                <div class="div-video-demonstracao">
-                    <h1 align="center">Titulo (Demostração dos produtos)</h1>
-                    <div id="video">
-                        <p>Área para inserir o vídeo</p>
-                        <input type="checkbox" id="check">
-                    </div>
-                    
+                <div class="best-seller">
+
+                    <h1 class="titulo-best-seller" align="center">Titulo Mais Vendido</h1>
+                    <img width="300px" height="200px" alt="Cake site template" src="img/cake-site-template-img.PNG"
+                        class="imagem-best-seller">
 
                 </div>
 
-                <div class="div-depoimentos">
+                <div class="best-seller">
 
-                    <h2 class="titulo-mais-vendidos" align="center">Depoimentos</h2>
-
-                    <br><br>
-
-                    <div class="depoimento">
-                        <img width="70px" height="70px" alt="user_image" class="imagem-depoimentos" src="img/profile icon.png"> 
-                        <h2 class="titulo-depoimento">Título depoimento</h2>
-                        <br>
-                        <p class="texto-depoimento">Serviço de ótima qualidade, atendimento rápido e eficiente.</p>
-                    </div>
-
-                    <div class="depoimento">
-                        <img width="70px" height="70px" alt="user_image" class="imagem-depoimentos" src="img/profile icon.png">
-                        <h2 class="titulo-depoimento">Título depoimento</h2>
-                        <br>
-                        <p class="texto-depoimento">Descrição do depoimento............. .................... </p>
-                    </div>
-
-                    <div class="depoimento">
-                        <img width="70px" height="70px" alt="user_image" class="imagem-depoimentos" src="img/profile icon.png">
-                        <h2 class="titulo-depoimento">Título depoimento</h2>
-                        <br>
-                        <p class="texto-depoimento">Descrição do depoimento............. ....................</p>
-                    </div>
-
-                </div>
-
-                <div class="div-endereco-contato">
-
-                    <h2 class="titulo-mais-vendidos" align="center">Sobre</h2>
-
-                </div>
-
-                <div class="div-rodape">
-
-                    <br><br>
-                    <table align="center" cellpadding="10">
-
-                        <tr align="center">
-                            <td><a href=""><img src="img/github-icon.png" alt="github" width="50px" height="50px"></a></td>
-                            <td><a href=""><img src="img/linkedin-icon.png" alt="linkedIn" width="60px" height="60px"></a></td>
-                            <td><a href=""><img src="img/instagram-icon.png" alt="instagram" width="40px" height="40px"></a></td>
-                        </tr>
-                    
-                    </table>
-
-                    <br>
-                    <p class="texto-rodape" align="center">2020. Programação Web, Bacharelado em Sistemas de Informação, PUCPR.</p>
+                    <h1 class="titulo-best-seller" align="center">Titulo Mais Vendido</h1>
+                    <img width="300px" height="200px" alt="Cake site template" src="img/cake-site-template-img.PNG"
+                        class="imagem-best-seller">
 
                 </div>
 
             </div>
-    </body>
-    <!--javascript bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <!--javascript principal-->
-    <script type="text/javascript" src="js/funcoes_index.js"></script>
+            <button id="buttonMaisProdutos" class="botao-mais-produtos">Mais Produtos</button>
 
-    <!--javasrcipt Slicker (carrossel)-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        </div>
 
-    </body>
+        <div class="div-video-demonstracao">
+            <h1 align="center">Titulo (Demostração dos produtos)</h1>
+            <div id="video">
+                <p>Área para inserir o vídeo</p>
+                <input type="checkbox" id="check">
+            </div>
+
+
+        </div>
+
+        <div class="div-depoimentos">
+
+            <h2 class="titulo-mais-vendidos" align="center">Depoimentos</h2>
+
+            <br><br>
+
+            <div class="depoimento">
+                <img width="70px" height="70px" alt="user_image" class="imagem-depoimentos" src="img/profile icon.png">
+                <h2 class="titulo-depoimento">Título depoimento</h2>
+                <br>
+                <p class="texto-depoimento">Serviço de ótima qualidade, atendimento rápido e eficiente.</p>
+            </div>
+
+            <div class="depoimento">
+                <img width="70px" height="70px" alt="user_image" class="imagem-depoimentos" src="img/profile icon.png">
+                <h2 class="titulo-depoimento">Título depoimento</h2>
+                <br>
+                <p class="texto-depoimento">Descrição do depoimento............. .................... </p>
+            </div>
+
+            <div class="depoimento">
+                <img width="70px" height="70px" alt="user_image" class="imagem-depoimentos" src="img/profile icon.png">
+                <h2 class="titulo-depoimento">Título depoimento</h2>
+                <br>
+                <p class="texto-depoimento">Descrição do depoimento............. ....................</p>
+            </div>
+
+        </div>
+
+        <div class="div-endereco-contato">
+
+            <h2 class="titulo-mais-vendidos" align="center">Sobre</h2>
+
+        </div>
+
+        <div class="div-rodape">
+
+            <br><br>
+            <table align="center" cellpadding="10">
+
+                <tr align="center">
+                    <td><a href=""><img src="img/github-icon.png" alt="github" width="50px" height="50px"></a></td>
+                    <td><a href=""><img src="img/linkedin-icon.png" alt="linkedIn" width="60px" height="60px"></a></td>
+                    <td><a href=""><img src="img/instagram-icon.png" alt="instagram" width="40px" height="40px"></a>
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+            <p class="texto-rodape" align="center">2020. Programação Web, Bacharelado em Sistemas de Informação, PUCPR.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+<!--javascript bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+<!--javascript principal-->
+<script type="text/javascript" src="js/funcoes_index.js"></script>
+
+<!--javasrcipt Slicker (carrossel)-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
 </html>
