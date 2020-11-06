@@ -340,6 +340,7 @@ nav{
         margin-top: -88px;
     }
     #icones{
+        margin-left: 50px;
         margin-top: -70px;
     }
 
@@ -367,7 +368,7 @@ nav{
     }
    
     #icones{
-        margin-left: 365px;
+        margin-left: 205px;
     }
     nav ul.show{
         left: 0;
