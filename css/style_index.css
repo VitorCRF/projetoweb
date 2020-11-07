@@ -364,8 +364,10 @@ nav{
         font-size: 17px;
     }
     a.active, a:hover{
-        border: none;
-        color: #f79990;;
+        text-decoration: none;
+        border: 2px solid white;
+        color: rgb(255, 255, 255);
+        transition: .5s;
     }
    
   
