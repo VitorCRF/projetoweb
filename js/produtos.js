@@ -1,5 +1,5 @@
-var array_Templates =   [["Cake Site ","../img/cake-site-template-img.png", false],
-                        ["Educacional", "../img/template-educacional.jpg", true],
+var array_Templates =   [["Educacional ","../img/template-educacional.jpg", false],
+                        ["Cake Site", "../img/cake-site-template-img.png", true],
                         ["Investimentos", "../img/template-empresa-de-investimentos.jpg", false],
                         ["Sistema Completo", "../img/template-sistema-completo.png", false],
                         ["Tecnologia", "../img/template-tecnologia.jpg", false],
