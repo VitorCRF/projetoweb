@@ -1,3 +1,11 @@
+var array_Templates =   [["Cake Site ","../img/cake-site-template-img.png", false],
+                        ["Educacional", "../img/template-educacional.jpg", true],
+                        ["Investimentos", "../img/template-empresa-de-investimentos.jpg", false],
+                        ["Sistema Completo", "../img/template-sistema-completo.png", false],
+                        ["Tecnologia", "../img/template-tecnologia.jpg", false],
+                        ["Web e Mobile", "../img/template-web-mobile.png", false]];
+var carrinho = [];
+
 $(document).ready(function(){
 
     $("#label").click(function(){
@@ -7,39 +15,39 @@ $(document).ready(function(){
         $('#carousel').toggleClass('esconde')
     });
 
-
-
-
-    $("#carrinho").click(function(){
-        
-    });
-
-
-    $("#produtos").click(function(){
-        $('#produtos').addClass('active')
-        $('#home').removeClass('active')
-        $('#depoimentos').removeClass('active')
-        $('#servicos').removeClass('active')
-    });
-    $("#home").click(function(){
-        $('#home').addClass('active')
-        $('#produtos').removeClass('active')
-        $('#depoimentos').removeClass('active')
-        $('#servicos').removeClass('active')
-    });
-    $("#depoimentos").click(function(){
-        $('#depoimentos').addClass('active')
-        $('#produtos').removeClass('active')
-        $('#home').removeClass('active')
-        $('#servicos').removeClass('active')
-    });
-    $("#servicos").click(function(){
-        $('#servicos').addClass('active')
-        $('#produtos').removeClass('active')
-        $('#home').removeClass('active')
-        $('#depoimentos').removeClass('active')
+    $("#label").click(function(){
+        $('.best-seller').toggleClass('esconde')
     });
     
+
     
+    listaProdutos();
 
 });
+
+function listaProdutos(){
+
+    
+    for (var i = 0; i < array_Templates.length; i++){
+        var conteudo = "";
+            conteudo += '<div class="best-seller">';
+            conteudo +=      '<h1 class="titulo-best-seller" align="center">'+array_Templates[i][0]+'</h1>';
+                conteudo +=      '<img width="300px" height="200px" alt="'+array_Templates[i][0]+'" src="'+array_Templates[i][1]+'"class="imagem-best-seller">';
+            if(array_Templates[i][2] == false){
+                conteudo +=      '<button class="bAdicionarCarrinho" id_produto="'+i+'">Adicionar ao carrinho</button>';
+            }
+            else{
+                conteudo +=      '<button class="bAdicionarCarrinho bAdicionado" id_produto="'+i+'">Adicionado ao carrinho</button>';
+            }
+            conteudo += '</div>';
+        $(".div-best-sellers").append(conteudo);
+        
+    }
+    $(".bAdicionarCarrinho").click(function(){
+        window.alert(oi);
+    });
+    
+    
+
+}
+
