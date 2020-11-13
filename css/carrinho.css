@@ -75,6 +75,20 @@ nav{
     margin-top: 29px;
     
 }
+#qtdeCarrinho{
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 77px;
+    margin-top: -8px;
+}
+#qtdeItens{
+    text-align: center;
+    font-size: 18px;
+    color: #fe5196;
+}
 
 
 /* botão responsivo */
@@ -138,6 +152,45 @@ nav{
     nav ul.show{
         left: 0;
     }
+}
+.div-best-sellers{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.container-best-sellers{
+    text-align: center;
+}
+
+.best-seller{
+    width: 315px;
+    height: 270px;
+    margin: 20;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgb(216, 164, 164);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.imagem-best-seller{
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+}
+.titulo-mais-vendidos{
+    font-weight: bold;
+    margin: 0;
+    font-size: 30px;
+}
+
+.titulo-best-seller{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
 }
 
 
