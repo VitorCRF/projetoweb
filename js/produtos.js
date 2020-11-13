@@ -46,7 +46,6 @@ function listaProdutos(){
     }
     $(".bAdicionarCarrinho").click(function(){
         
-
         var id = $(this).attr("id_produto");
         
         array_Templates[id].splice(2, 1, true);
@@ -54,11 +53,18 @@ function listaProdutos(){
         carrinho.push(array_Templates[id]);
         console.log(carrinho);
 
+        qtdeCarrinho()
         listaProdutos();
 
     });
-    
-    
+
+}
+
+function qtdeCarrinho(){
+    $("#qtdeCarrinho").html("");
+    var conteudo = "";
+    conteudo += '<p id="qtdeItens">'+carrinho.length+'</p>'
+    $("#qtdeCarrinho").append(conteudo);
 
 }
 
