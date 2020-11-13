@@ -142,6 +142,11 @@ nav{
     cursor: pointer;
     margin-top: 8px;
 }
+.bAdicionado:hover{
+    background-image: linear-gradient(to right,#0bc0a8 0%,  #47f587 100%);
+    color: whitesmoke;
+    transition: .5s;
+}
 .bAdicionarCarrinho:hover{
     background-image: linear-gradient(to right,#2575fc 0%,  #6a11cb 100%);
     color: whitesmoke;
