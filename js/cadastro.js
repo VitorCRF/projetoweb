@@ -32,5 +32,8 @@ $(document).ready(function () {
     $("#home").removeClass("active");
     $("#depoimentos").removeClass("active");
   });
+  $("#botao-voltar").click(function () {
+    window.location.href = "login.html";
+  });
 
 });
