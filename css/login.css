@@ -1,237 +1,206 @@
-.html-style{
-    background-color: #ffc1bb;
+.html-style {
+  background-color: #ffc1bb;
 }
-*{
-    text-decoration: none;
-    list-style: none;
-    font-family: Roboto;
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto;
 }
-nav ul{
-    float: right;
-    margin-right: 440px;
-    margin-top: 10px;
-    text-align: center;
-    padding: 7px 6px;
-    color: rgb(255, 255, 255);
-    border-radius: 3px;
-    
+nav ul {
+  float: right;
+  margin-right: 440px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 7px 6px;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
 }
 nav li {
-    display: inline-block;
-    margin: 0 8px;
-    line-height: 80px;
-
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
 }
-nav a{
-    color: rgb(255, 255, 255);
-    padding: 7px 5px;
-    border-radius: 3px;
+nav a {
+  color: rgb(255, 255, 255);
+  padding: 7px 5px;
+  border-radius: 3px;
 }
-a.active, ul li a:hover{
-    text-decoration: none;
-    border: 2px solid white;
-    color: rgb(255, 255, 255);
-    transition: .5s;
+a.active,
+ul li a:hover {
+  text-decoration: none;
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
 }
-
-
 
 #icones {
-    height: 40px;
-    margin: 25 82%;
-    border: 0;
-    position: absolute;
-
+  height: 40px;
+  margin: 25 82%;
+  border: 0;
+  position: absolute;
 }
 
 #tabelaIcones tr td:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-
-#header{
-    background-color: #ffc1bb;
-    text-align: center;
+#header {
+  background-color: #ffc1bb;
+  text-align: center;
 }
 #logo {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    margin-left: 7.3%;
-    margin-top: 15px;
-    cursor: pointer;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  margin-left: 7.3%;
+  margin-top: 15px;
+  cursor: pointer;
 }
-nav{
-    width: 100%;
-    height: 100px;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);   
+nav {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
 }
-.menu{
-    width: 560px;
-    height: 40px;
-    position: absolute;
-    text-align: center;
-    margin-left: 28%;
-    margin-top: 29px;
-    
+.menu {
+  width: 560px;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  margin-left: 28%;
+  margin-top: 29px;
 }
-
 
 /* botão responsivo */
-#label{
-    
-    display: none;
-
+#label {
+  display: none;
 }
-#toggle{
-    display: none;
+#toggle {
+  display: none;
 }
 
-@media  (max-width: 1136px){
-    #label{
-        color: white;
-        font-size: 46px;
-        width: 46px;
-        padding-top: 15px;
-        line-height: 70px;
-        margin-left: 10px;
-        cursor: pointer;
-        display: block;
-    }
-    #logo{
-        margin-left: 75px;
-        width: 30px;
-        height: 30px;
-        margin-top: -82px;
-    }
-    #icones{
-        margin-left: 66%;
-        margin-top: -70px;
-    }
+@media (max-width: 1136px) {
+  #label {
+    color: white;
+    font-size: 46px;
+    width: 46px;
+    padding-top: 15px;
+    line-height: 70px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  #logo {
+    margin-left: 75px;
+    width: 30px;
+    height: 30px;
+    margin-top: -82px;
+  }
+  #icones {
+    margin-left: 66%;
+    margin-top: -70px;
+  }
 
-    nav ul {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-color: #ffc1bb;
-        top: 115px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-
-    }
-    nav li {
-        display: block;
-        line-height: 60px;
-    }
-    nav a{
-        font-size: 17px;
-    }
-    a.active, a:hover{
-        text-decoration: none;
-        border: 2px solid white;
-        color: rgb(255, 255, 255);
-        transition: .5s;
-    }
-    
-  
-    nav ul.show{
-        left: 0;
-    }
-}
-
-
-.div-endereco-contato{
+  nav ul {
+    position: absolute;
     width: 100%;
-    margin-top: 60px;
+    height: 100vh;
+    background-color: #ffc1bb;
+    top: 115px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav li {
+    display: block;
+    line-height: 60px;
+  }
+  nav a {
+    font-size: 17px;
+  }
+  a.active,
+  a:hover {
+    text-decoration: none;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
 }
 
-.div-rodape{
-    margin: auto;
-    width: 95%;
-    height: 200px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    border-radius: 15px;
+.div-endereco-contato {
+  width: 100%;
+  margin-top: 60px;
 }
-.interna{
+
+.div-rodape {
+  margin: auto;
+  width: 95%;
+  height: 200px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  border-radius: 15px;
+}
+.interna {
   margin: 0 auto;
   margin-top: 10px;
   width: 305px;
 }
-.container{
-    width: 100%;
-    height: 100%;
+.container {
+  width: 100%;
+  height: 100%;
 }
 
-.div-formulario{
-    position: relative;
-    margin: 0 auto;
-    width: 380px;
-    height: 500px;
-    top: 170px
+.div-formulario {
+  position: relative;
+  margin: 0 auto;
+  width: 380px;
+  height: 500px;
+  top: 170px;
 }
 body {
-    background: #eee !important;
-  }
-  
-  .wrapper {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin: 0 auto;
-    width: 100%;
-  
-  }
-  
-  .form-signin {
-    font-family: Roboto;
-    max-width: 380px;
-    padding: 15px 35px 45px;
-    margin: 0 auto;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);   
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    margin-top: 2%;
+  background: #eee !important;
+}
 
-  }
+.interna {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin: 0 auto;
+  width: 400px;
+}
 
-  .campo_login{
-      border: #eee;
-      border-radius: 6px;
-      margin: 10 auto ;
-      padding: 10px;
-      width: 100%;
-      height: 50px;
-  }
+.interna {
+  font-family: Roboto;
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  margin-top: 2%;
+}
 
+.campo_login {
+  border: #eee;
+  border-radius: 5px;
+  margin: 10 auto;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+}
 
-  .form-signin .form-signin-heading,
-  .form-signin .checkbox {
-    margin-bottom: 30px;
-  }
-  .form-signin .checkbox {
-    font-weight: normal;
-  }
-  .form-signin .form-control {
-    position: relative;
-    font-size: 16px;
-    height: auto;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .form-signin .form-control:focus {
-    z-index: 2;
-  }
-  .form-signin input[type="text"] {
-    margin-bottom: -1px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .form-signin input[type="password"] {
-    margin-bottom: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
+.botao_login {
+  background-color: transparent;
+  font-family: Roboto;
+  font-size: large;
+  border-radius: 50px;
+  border-color: black;
+  margin: 10 auto;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+}
