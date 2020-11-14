@@ -33,7 +33,11 @@ $(document).ready(function () {
     $("#depoimentos").removeClass("active");
   });
 
-  $("#botao-cadastrar").click(function () {
+  $("#botao-cadastre-se").click(function () {
     window.location.href = "cadastro.html";
+  });
+
+  $("#botao-voltar").click(function () {
+    window.location.href = "../index.html";
   });
 });

@@ -137,7 +137,8 @@ body {
 }
 
 .interna-cadastro {
-  width: 400px;
+  max-width: 400px;
+  min-width: 200px;
   text-align: center;
   font-family: Roboto;
   padding: 15px 35px 45px;
@@ -148,33 +149,34 @@ body {
   margin-top: 2%;
 }
 
-.campo-texto-formulario{
+.campos-cadastro{
   border: #eee;
   border-radius: 5px;
-  margin: 10 auto;
-  padding: 10px;
-  width: 320px;
-  height: 50px;
-}
-
-.botao-cadastrar{
-  background-color: transparent;
-  font-family: Roboto;
-  font-size: large;
-  border-radius: 50px;
-  border-color: black;
   margin: 10 auto;
   padding: 10px;
   width: 100%;
   height: 50px;
 }
 
-.botao-cadastrar:hover{
-  background-color: white;
+.botoes-cadastro{
+  background-color: transparent;
+  font-family: Roboto;
+  font-size: large;
+  border-radius: 50px;
+  border-color: black;
+  margin: 10 auto;
+  padding-left: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+.botoes-cadastro:hover{
+  background-color: white;  
   border: none;
   font-size: 20;
 }
 
 .tabela-cadastro{
   text-align: center;
+  width: 100%;
 }

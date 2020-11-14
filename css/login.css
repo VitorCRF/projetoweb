@@ -135,8 +135,9 @@ body {
   background: #eee !important;
 }
 
-.externa-login {
-  width: 400px;
+.interna-login {
+  min-width: 200px;
+  max-width: 400px;
   text-align: center;
   font-family: Roboto;
   padding: 15px 35px 45px;
@@ -147,7 +148,7 @@ body {
   margin-top: 2%;
 }
 
-.campo_login {
+.campos-login {
   border: #eee;
   border-radius: 5px;
   margin: 10 auto;
@@ -156,7 +157,7 @@ body {
   height: 50px;
 }
 
-.botao_login {
+.botoes-login {
   background-color: transparent;
   font-family: Roboto;
   font-size: large;
@@ -168,8 +169,13 @@ body {
   height: 50px;
 }
 
-.botao_login:hover{
+.botoes-login:hover{
   background-color: white;
   border: none;
   font-size: 20;
+}
+
+.tabela-login{
+  text-align: center;
+  width: 100%;
 }
