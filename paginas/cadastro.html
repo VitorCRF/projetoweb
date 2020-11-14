@@ -1,0 +1,81 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../js/cadastro.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+    <!-- CSS Slicker (carrossel)-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body class="html-style">
+    <header id="header">Olá mundo</header>
+    <nav>
+        <label for="toggle" id="label">&#9776</label>
+        <input type="checkbox" id="toggle" />
+        <div id="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo" width="70px" height="70px"
+                    class="imagem-logo"></a>
+        </div>
+        <ul>
+            <li><a id="home" href="../index.html">HOME</a></li>
+            <li><a href="produtos.html" id="produtos">PRODUTOS</a></li>
+            <li><a href="#" id="depoimentos">DEPOIMENTOS</a></li>
+            <li><a href="#" id="servicos">SERVIÇOS</a></li>
+        </ul>
+    </nav>
+    <div class="externa-cadastro">
+        <div class="interna-cadastro">
+            <table align="center" cellpadding="0" class="tabela-cadastro">
+                <tr>
+                    <td>
+                        <h2 class="form-signin-heading">Cadastro</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nome" placeholder="Nome completo" class="campo-texto-formulario" autofocus="" > </td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="email" placeholder="Example@gmail.com" class="campo-texto-formulario"> </td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="email" id="verificarEmail" placeholder="Verificar email" class="campo-texto-formulario"> </td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" id="telefone" placeholder="(00) 90000-0000  (opcional)" class="campo-texto-formulario"> </td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" id="cep" placeholder="CEP" class="campo-texto-formulario"> </td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="password" placeholder="Senha (Mínimo de 6 dígitos)" class="campo-texto-formulario" id="senha"> </td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="password" placeholder="Confirmar senha" class="campo-texto-formulario" id="confirmaSenha"></td>
+                </tr>
+                
+                <tr>
+                    <td align="center"><button id="botaoCadastro" class="botao-cadastrar">Cadastrar</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>

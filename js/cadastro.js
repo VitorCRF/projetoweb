@@ -33,7 +33,4 @@ $(document).ready(function () {
     $("#depoimentos").removeClass("active");
   });
 
-  $("#botao-cadastrar").click(function () {
-    window.location.href = "cadastro.html";
-  });
 });
