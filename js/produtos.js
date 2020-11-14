@@ -4,7 +4,11 @@ var array_Templates =   [["Educacional ","../img/template-educacional.jpg", fals
                         ["Sistema Completo", "../img/template-sistema-completo.png", false],
                         ["Tecnologia", "../img/template-tecnologia.jpg", false],
                         ["Web e Mobile", "../img/template-web-mobile.png", false]];
+
 var carrinho = [];
+storage = window.localStorage;
+
+
 
 $(document).ready(function(){
 
@@ -20,7 +24,7 @@ $(document).ready(function(){
     });
     
     listaProdutos();
-
+    
 });
 
 
@@ -45,16 +49,24 @@ function listaProdutos(){
         
     }
     $(".bAdicionarCarrinho").click(function(){
+        dados = [];
+        aux = [];
+        banco = window.localStorage;
         
         var id = $(this).attr("id_produto");
         
         array_Templates[id].splice(2, 1, true);
-
         carrinho.push(array_Templates[id]);
-        console.log(carrinho);
-
+        console.log(carrinho)
+       
         qtdeCarrinho()
         listaProdutos();
+        
+
+        banco.setItem("dadosProdutos", JSON.stringify(carrinho));
+    
+        
+
 
     });
 
