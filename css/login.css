@@ -1,3 +1,4 @@
+
 .html-style {
   background-color: #ffc1bb;
 }
@@ -130,52 +131,14 @@ nav {
   }
 }
 
-.div-endereco-contato {
-  width: 100%;
-  margin-top: 60px;
-}
-
-.div-rodape {
-  margin: auto;
-  width: 95%;
-  height: 200px;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  border-radius: 15px;
-}
-.interna {
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 305px;
-}
-.container {
-  width: 100%;
-  height: 100%;
-}
-
-.div-formulario {
-  position: relative;
-  margin: 0 auto;
-  width: 380px;
-  height: 500px;
-  top: 170px;
-}
 body {
   background: #eee !important;
 }
 
-.interna {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin: 0 auto;
+.externa-login {
   width: 400px;
-}
-
-.interna {
+  text-align: center;
   font-family: Roboto;
-  max-width: 380px;
   padding: 15px 35px 45px;
   margin: 0 auto;
   background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
@@ -203,4 +166,10 @@ body {
   padding: 10px;
   width: 100%;
   height: 50px;
+}
+
+.botao_login:hover{
+  background-color: white;
+  border: none;
+  font-size: 20;
 }

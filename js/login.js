@@ -34,6 +34,6 @@ $(document).ready(function () {
   });
 
   $("#botao-cadastrar").click(function () {
-    window.location.href = "cadastro.html";
+    window.location.href = "cadastro copy.html";
   });
 });
