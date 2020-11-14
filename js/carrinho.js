@@ -1,4 +1,5 @@
 var banco = window.localStorage;
+var numeroItens = JSON.parse(banco.getItem("dadosProdutos"));
 $(document).ready(function(){
 
     $("#label").click(function(){
@@ -57,7 +58,7 @@ function listaProdutos() {
 function qtdeCarrinho(){
     $("#qtdeCarrinho").html("");
     var conteudo = "";
-    conteudo += '<p id="qtdeItens">'+banco.length+'</p>'
+    conteudo += '<p id="qtdeItens">'+numeroItens.length+'</p>'
     $("#qtdeCarrinho").append(conteudo);
 
 }
