@@ -1,4 +1,5 @@
 
+
 .html-style {
   background-color: #ffc1bb;
 }
@@ -135,7 +136,7 @@ body {
   background: #eee !important;
 }
 
-.externa-login {
+.interna-cadastro {
   width: 400px;
   text-align: center;
   font-family: Roboto;
@@ -147,16 +148,16 @@ body {
   margin-top: 2%;
 }
 
-.campo_login {
+.campo-texto-formulario{
   border: #eee;
   border-radius: 5px;
   margin: 10 auto;
   padding: 10px;
-  width: 100%;
+  width: 320px;
   height: 50px;
 }
 
-.botao_login {
+.botao-cadastrar{
   background-color: transparent;
   font-family: Roboto;
   font-size: large;
@@ -168,8 +169,12 @@ body {
   height: 50px;
 }
 
-.botao_login:hover{
+.botao-cadastrar:hover{
   background-color: white;
   border: none;
   font-size: 20;
+}
+
+.tabela-cadastro{
+  text-align: center;
 }
