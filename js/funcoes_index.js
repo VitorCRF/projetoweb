@@ -43,6 +43,9 @@ $(document).ready(function(){
     $("#label").click(function(){
         $('#carousel').toggleClass('esconde')
     });
+    $("#label").click(function(){
+        $('#chamadaCarrossel').toggleClass('esconde')
+    });
     
     eventosClick();
     
