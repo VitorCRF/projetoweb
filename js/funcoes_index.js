@@ -52,7 +52,7 @@ $(document).ready(function(){
 function initMap() {
 
     var configuracoes = {
-      center: {lat: -25.45212754, lng: -49.25276682},
+      center: {lat: -25.441570, lng: -49.289771},
       zoom: 15
     }
         
