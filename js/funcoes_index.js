@@ -1,5 +1,10 @@
 var mapa;
+var array_BestSeller =   [["Educacional ","img/template-educacional.jpg"],
+                        ["Cake Site", "img/cake-site-template-img.png"],
+                        ["Investimentos", "img/template-empresa-de-investimentos.jpg"]];
+
 $(document).ready(function(){
+    
     initMap();
     function atualizarInformacoes(){
         $("#nomeProduto").text($(".slick-center").data("name"));
@@ -25,7 +30,9 @@ $(document).ready(function(){
         
         
     });
-
+    listaMaisVendidos();
+    
+    console.log(array_BestSeller);
     $(".carousel").on("afterChange", function(){
         atualizarInformacoes();
     });
@@ -37,30 +44,7 @@ $(document).ready(function(){
         $('#carousel').toggleClass('esconde')
     });
     
-    $("#produtos").click(function(){
-        $('#produtos').addClass('active')
-        $('#home').removeClass('active')
-        $('#depoimentos').removeClass('active')
-        $('#servicos').removeClass('active')
-    });
-    $("#home").click(function(){
-        $('#home').addClass('active')
-        $('#produtos').removeClass('active')
-        $('#depoimentos').removeClass('active')
-        $('#servicos').removeClass('active')
-    });
-    $("#depoimentos").click(function(){
-        $('#depoimentos').addClass('active')
-        $('#produtos').removeClass('active')
-        $('#home').removeClass('active')
-        $('#servicos').removeClass('active')
-    });
-    $("#servicos").click(function(){
-        $('#servicos').addClass('active')
-        $('#produtos').removeClass('active')
-        $('#home').removeClass('active')
-        $('#depoimentos').removeClass('active')
-    });
+    eventosClick();
     
     
 
@@ -101,3 +85,22 @@ function initMap() {
       });
   
   }
+  function listaMaisVendidos(){
+
+    $(".container-best-sellers").html("");
+
+    for (var i = 0; i < array_BestSeller.length; i++){
+        var conteudo = "";
+            conteudo += '<div class="best-seller">';
+            conteudo +=      ' <h1 class="titulo-best-seller" align="center">'+array_BestSeller[i][0]+'</h1>';
+            conteudo +=      '<img width="300px" height="200px" alt="Cake site template" src="'+array_BestSeller[i][1]+'"class="imagem-best-seller">';
+            conteudo += '</div>';
+        $(".container-best-sellers").append(conteudo);
+        
+    }
+}
+function eventosClick(){
+    $("#buttonMaisProdutos").click(function(){
+        window.location.href = "paginas/produtos.html"
+    });
+}

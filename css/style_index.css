@@ -116,6 +116,7 @@ nav{
     margin-top: 20px;
     background-color: #fe5196;
     border-radius: 15px;
+    margin: 10px;
 }
 
 .div-video-demonstracao{
@@ -237,7 +238,6 @@ nav{
 #map{
 	width: 500px;
     height: 500px;
-    
     margin-left: -250px;
     top: 50%;
     left: 50%;
