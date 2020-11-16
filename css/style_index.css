@@ -232,6 +232,23 @@ nav{
 .div-table{
    margin-top: 106px;
 }
+/* Google maps */
+
+#map{
+	width: 500px;
+    height: 500px;
+    
+    margin-left: -250px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+	background-color: #ddd;
+}
+#title-map{
+    text-align: center;
+
+    margin-top: 250px;
+}
 
 
 /* Text styles */
@@ -376,5 +393,15 @@ nav{
     }
     #carousel.esconde{
         display: none;
+    }
+    #map{
+        width: 300px;
+        height: 300px;
+        
+        margin-left: -150px;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        background-color: #ddd;
     }
 }

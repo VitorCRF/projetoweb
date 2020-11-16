@@ -1,5 +1,6 @@
+var mapa;
 $(document).ready(function(){
-
+    initMap();
     function atualizarInformacoes(){
         $("#nomeProduto").text($(".slick-center").data("name"));
         $("#precoProduto").text($(".slick-center").data("price"));
@@ -64,3 +65,39 @@ $(document).ready(function(){
     
 
 });
+function initMap() {
+
+    var configuracoes = {
+      center: {lat: -25.45212754, lng: -49.25276682},
+      zoom: 15
+    }
+        
+    mapa = new google.maps.Map(document.getElementById('map'), configuracoes);
+  
+    var marcador = new google.maps.Marker({
+      position: {lat: -25.45212754, lng: -49.25276682},
+      title: "PUCPR",
+      map: mapa
+    });
+    marcador = new google.maps.Marker({
+        position: {lat: -25.441505, lng: -49.274801},  
+        title: "Filial 1",
+        map: mapa
+      });
+    marcador = new google.maps.Marker({
+        position: {lat: -25.441570, lng: -49.289771}, 
+        title: "Filial 2",
+        map: mapa
+      });
+    marcador = new google.maps.Marker({
+        position: {lat: -25.450735, lng: -49.278527},   
+        title: "Filial 3",
+        map: mapa
+      });
+      marcador = new google.maps.Marker({
+        position: {lat: -25.438300, lng: -49.300866},    
+        title: "Filial 4",
+        map: mapa
+      });
+  
+  }
