@@ -185,6 +185,8 @@ nav{
 
 .imagem-depoimentos{
     border-radius: 100%;
+    width: 100px;
+    height: 100px;
     margin-top: 5px;
 }
 
@@ -273,7 +275,7 @@ nav{
 .titulo-depoimento{
     font-family: arial;
     font-size: 25px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     margin-top: 10px;
 }
@@ -281,8 +283,11 @@ nav{
 .texto-depoimento{
     font-family: arial;
     font-size: 15px;
-    color: white;
+    padding: 9px;
+    color: rgb(0, 0, 0);
     font-weight: bold;
+    margin-top: -30px;
+    
 }
 
 /* Carrossel style */

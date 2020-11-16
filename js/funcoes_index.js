@@ -5,6 +5,10 @@ var array_BestSeller =   [["Educacional ","img/template-educacional.jpg"],
                         ["Cake Site", "img/cake-site-template-img.png"],
                         ["Investimentos", "img/template-empresa-de-investimentos.jpg"]];
 
+var array_Depoimentos =  [["img/joao.jpg", "João Lucas Silva ", "Lorem ipsum dolor sit amet. Ut porta sed justo sodales rhoncus. Maecenas quis metus pellentesque, fermentum risus sit amet, imperdiet orci. Proin commodo porttitor ligula vitae lobortis."],
+                        ["img/maria.jpg", "Maria Gonçalves", "Morbi convallis, magna at luctus eleifend, dui felis tempus dolor, ut ultrices tortor diam in lorem. Phasellus sapien ligula, vehicula in augue non, euismod hendrerit ex."],
+                        ["img/augusto.jpg", "Augusto Nascimento", "Cras congue molestie mollis. Vivamus sed sapien vel tortor vehicula congue. Quisque congue ante in vehicula venenatis. Pellentesque vel quam elit. Morbi cursus lobortis iaculis. "]];
+
 $(document).ready(function(){
     
     initMap();
@@ -52,6 +56,7 @@ $(document).ready(function(){
     eventosClick();
     
     qtdeCarrinho();
+    listaDepoimentos();
 
 });
 function initMap() {
@@ -101,6 +106,23 @@ function initMap() {
             conteudo +=      '<img width="300px" height="200px" alt="Cake site template" src="'+array_BestSeller[i][1]+'"class="imagem-best-seller">';
             conteudo += '</div>';
         $(".container-best-sellers").append(conteudo);
+        
+    }
+}
+function listaDepoimentos(){
+
+    $(".div-depoimentos").html("");
+    console.log(array_Depoimentos)
+
+    for (var i = 0; i < array_Depoimentos.length; i++){
+        var conteudo = "";
+        conteudo += '<div class="depoimento">';
+        conteudo +=      '<img alt="user_image" class="imagem-depoimentos" src="'+array_Depoimentos[i][0]+'">';
+        conteudo +=      '<h2 class="titulo-depoimento">'+array_Depoimentos[i][1]+'</h2>';
+        conteudo += '<br>';
+        conteudo +=      ' <p class="texto-depoimento">'+array_Depoimentos[i][2]+'</p>';
+        conteudo += '</div>'
+        $(".div-depoimentos").append(conteudo);
         
     }
 }
