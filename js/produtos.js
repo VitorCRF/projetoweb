@@ -64,8 +64,6 @@ function listaProdutos(){
         
 
         banco.setItem("dadosProdutos", JSON.stringify(carrinho));
-    
-        
 
 
     });
