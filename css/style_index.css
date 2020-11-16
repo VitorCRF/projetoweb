@@ -439,7 +439,7 @@ nav{
         display: inline-block;
         vertical-align: middle;
         cursor: pointer;
-        margin-top: 90px;
+        margin-top: 88px;
         
     }
     .botao-cadastro{
@@ -453,7 +453,7 @@ nav{
         font-family: arial;
         font-weight: bold;
         cursor: pointer;
-        margin-top: 90px;
+        margin-top: 88px;
     }
     .carousel .carousel-img{
         transform: scale(0.6);
@@ -463,6 +463,6 @@ nav{
         height: 100%;
         border-radius: 10px;
         position: relative;
-        margin-top: 205px;
+        margin-top: 196px;
     }
 }
