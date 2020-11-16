@@ -418,4 +418,16 @@ nav{
         text-align: center;
         background-color: #ddd;
     }
+    #chamadaCarrossel h1{
+        font-size: 15px;
+    }
+    #chamadaCarrossel {
+        width: 400px;
+        height: 50px;
+        margin-left: -200px;
+        position: absolute;
+        top: 158px;
+        left: 50%;
+        text-align: center;
+    }
 }
