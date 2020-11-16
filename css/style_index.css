@@ -337,6 +337,19 @@ nav{
 .botao-setas:hover{
     cursor: pointer;
 }
+#qtdeCarrinho{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 77px;
+    margin-top: -11px;
+}
+#qtdeItens{
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+}
 
 /* botão responsivo */
 #label{

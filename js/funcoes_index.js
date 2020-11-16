@@ -1,3 +1,5 @@
+var banco = window.localStorage;
+var numeroItens = JSON.parse(banco.getItem("dadosProdutos"));
 var mapa;
 var array_BestSeller =   [["Educacional ","img/template-educacional.jpg"],
                         ["Cake Site", "img/cake-site-template-img.png"],
@@ -49,7 +51,7 @@ $(document).ready(function(){
     
     eventosClick();
     
-    
+    qtdeCarrinho();
 
 });
 function initMap() {
@@ -106,4 +108,11 @@ function eventosClick(){
     $("#buttonMaisProdutos").click(function(){
         window.location.href = "paginas/produtos.html"
     });
+}
+function qtdeCarrinho(){
+    $("#qtdeCarrinho").html("");
+    var conteudo = "";
+    conteudo += '<p id="qtdeItens">'+numeroItens.length+'</p>'
+    $("#qtdeCarrinho").append(conteudo);
+
 }
