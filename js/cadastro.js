@@ -17,6 +17,12 @@ $(document).ready(function(){
     var confirmaSenha;
 
     var prosseguir = true;
+    $("#label").click(function () {
+        $("ul").toggleClass("show");
+      });
+      $("#label").click(function () {
+        $("#carousel").toggleClass("esconde");
+      });
 
     $("#botaoCadastro").click(function(){
 
