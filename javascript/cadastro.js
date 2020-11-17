@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-    var contas = [];
-    var informacoes;
     var contasStorage = localStorage.getItem("contasStorage");
     contasStorage = JSON.parse(contasStorage);
 
@@ -33,6 +31,8 @@ $(document).ready(function(){
         /* verificacao de nome */
         if(nome != ""){
             prosseguir = true;
+            $("#nome").removeClass("campo-invalido");
+            $("#nome").addClass("campo-texto-formulario");
         }
         else{
             $("#nome").removeClass("campo-texto-formulario");
@@ -43,10 +43,9 @@ $(document).ready(function(){
         /* verificacao de email */
         if (email != ""){
             prosseguir = true;
+            $("#email").removeClass("campo-invalido");
+            $("#email").addClass("campo-texto-formulario")
         } 
-        else if(email != ""){
-            prosseguir = true;
-        }
         else{
             $("#email").removeClass("campo-texto-formulario");
             $("#email").addClass("campo-invalido");
@@ -57,6 +56,8 @@ $(document).ready(function(){
         /* verificacao de confirmar email */
         if (verificaEmail != "" && verificaEmail === email){
             prosseguir = true;
+            ("#verificarEmail").removeClass("campo-invalido");
+            ("#verificarEmail").addClass("campo-formulario-texto")
         }
         else if (verificaEmail != email){
             $("#verificarEmail").removeClass("campo-texto-formulario");
@@ -82,6 +83,8 @@ $(document).ready(function(){
 
         if (cep != "" && cep.length === 8){
             prosseguir = true;
+            $("#cep").removeClass("campo-invalido")
+            $("#cemp").addClass("campo-texto-formulario")
         }
         else{
             $("#cep").removeClass("campo-texto-formulario");
@@ -92,6 +95,8 @@ $(document).ready(function(){
         /* verificacao de senha */
         if (senha != "" && senha.length >= 6 && confirmaSenha === senha){
             prosseguir = true;
+            $("#senha").removeClass("campo-valido")
+            $("#senha").addClass("campo-texto-formulario")
         }
         else if(senha != confirmaSenha){
             $("#confirmaSenha").removeClass("campo-texto-formulario");
@@ -109,6 +114,8 @@ $(document).ready(function(){
         /* verificacao de confirma senha */
         if (confirmaSenha != ""){
             prosseguir = true;
+            $("#confirmaSenha").removeClass("campo-invalido");
+            $("#confirmaSenha").addClass("campo-texto-formulario");
         }
         else{
             $("#confirmaSenha").removeClass("campo-texto-formulario");
@@ -148,6 +155,17 @@ $(document).ready(function(){
         var user = JSON.parse(localStorage.getItem("contasStorage"))
 
         console.log(user)
+    }
+
+    function Editar(){
+
+        var userEdit;
+        
+
+    }
+
+    function Remover(){
+
     }
 
 });

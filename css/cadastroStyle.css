@@ -32,7 +32,7 @@
 
 
 .campo-texto-formulario{
-    width: 350px;
+    width: 320px;
     height: 45px;
     border-radius: 10px;
     border-style: solid;
@@ -40,7 +40,7 @@
 }
 
 .campo-invalido{
-    width: 350px;
+    width: 320px;
     height: 45px;
     border-radius: 10px;
     border-style: solid;
