@@ -40,4 +40,28 @@ $(document).ready(function () {
   $("#botao-voltar").click(function () {
     window.location.href = "../index.html";
   });
+
+  /* botao para logar */ 
+  $("#botaoLogin").click(function(){
+
+    var users = JSON.parse(localStorage.getItem("contasStorage"));
+    var email = $("#emailLogin").val();
+    var senha = $("#senhaLogin").val();
+
+    console.log(users)
+
+    for(var i = 0; i < users.length; i++){
+
+      if (users[i][1] === email && users[i][2] === senha){
+        var login = true
+        alert("login realizado")
+      }
+      else{
+
+      }
+
+    }
+
+  });
+
 });
