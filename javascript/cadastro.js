@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+    var contas = [];
+    var informacoes;
+    var contasStorage = localStorage.getItem("contasStorage");
+    contasStorage = JSON.parse(contasStorage);
+
+    /* verificacao para ver se o local storage está vazio, e se estiver inicia-lo como um array */ 
+    if (contasStorage == null){
+        contasStorage = [];
+    }
+
     var nome;
     var email;
     var verificaEmail;
@@ -7,6 +17,8 @@ $(document).ready(function(){
     var cep;
     var senha;
     var confirmaSenha;
+
+    var prosseguir = true;
 
     $("#botaoCadastro").click(function(){
 
@@ -20,79 +32,122 @@ $(document).ready(function(){
 
         /* verificacao de nome */
         if(nome != ""){
-
+            prosseguir = true;
         }
         else{
             $("#nome").removeClass("campo-texto-formulario");
             $("#nome").addClass("campo-invalido");
+            prosseguir = false;
         }
 
         /* verificacao de email */
         if (email != ""){
-
+            prosseguir = true;
         } 
-        else if(email != "" && confirmaSenha != ""){
-
-
+        else if(email != ""){
+            prosseguir = true;
         }
         else{
             $("#email").removeClass("campo-texto-formulario");
             $("#email").addClass("campo-invalido");
+            alert("Email inválido.")
+            prosseguir = false;
         }
 
         /* verificacao de confirmar email */
-        if (verificaEmail != ""){
-
+        if (verificaEmail != "" && verificaEmail === email){
+            prosseguir = true;
+        }
+        else if (verificaEmail != email){
+            $("#verificarEmail").removeClass("campo-texto-formulario");
+            $("#verificarEmail").addClass("campo-invalido");
+            alert("O email de confirmação não é igual ao email inserido.")
         }
         else{
             $("#verificarEmail").removeClass("campo-texto-formulario");
             $("#verificarEmail").addClass("campo-invalido");
+            prosseguir = false;
         }
 
         /* verificacao de telefone */
         if (telefone != ""){
-
+            prosseguir = true;
         } 
         else{
-            
+            telefone = "(00) 90000-0000"
+            prosseguir = true;
         }
 
         /* verificacao de cep */
 
-        if (cep != ""){
-
+        if (cep != "" && cep.length === 8){
+            prosseguir = true;
         }
         else{
             $("#cep").removeClass("campo-texto-formulario");
             $("#cep").addClass("campo-invalido");
+            prosseguir = false;
         }
 
         /* verificacao de senha */
         if (senha != "" && senha.length >= 6 && confirmaSenha === senha){
-            alert("senha boa")
-
+            prosseguir = true;
         }
         else if(senha != confirmaSenha){
             $("#confirmaSenha").removeClass("campo-texto-formulario");
             $("#confirmaSenha").addClass("campo-invalido");
             alert("A confirmação de senha não corresponde a senha inserida.")
+            prosseguir = false;
         }
         else{
             $("#senha").removeClass("campo-texto-formulario");
             $("#senha").addClass("campo-invalido");
             alert("A senha não possui 6 dígitos.")
+            prosseguir = false;
         }
 
         /* verificacao de confirma senha */
         if (confirmaSenha != ""){
-
+            prosseguir = true;
         }
         else{
             $("#confirmaSenha").removeClass("campo-texto-formulario");
             $("#confirmaSenha").addClass("campo-invalido");
             alert("A confirmação de senha está vazia.")
+            prosseguir = false;
+        }
+
+        /* verificacao para realizar cadastro */
+        if (prosseguir === true){
+            alert("Cadastro realizado com sucesso.")
+            Adicionar();
+        }
+        else{
+            alert("O cadastro não foi realizado. Por favor verifique as informações inseridas e tente novamente.")
         }
 
     });
+
+    function Adicionar(){
+
+        /* funcao para adicionar um novo usuario ao local storage */ 
+
+        var newUser = [];
+        newUser.push(nome, email, senha, cep, telefone)
+
+        contasStorage.push(newUser);
+        localStorage.setItem("contasStorage", JSON.stringify(contasStorage));
+
+        alert("Mando pro storage")
+
+        Retornar()
+
+    }
+
+    function Retornar(){
+        var user = JSON.parse(localStorage.getItem("contasStorage"))
+
+        console.log(user)
+    }
 
 });
