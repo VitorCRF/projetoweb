@@ -2,9 +2,6 @@
 .html-style {
   background-color: #ffc1bb;
 }
-body{
-  background-color: #ffc1bb;
-}
 * {
   text-decoration: none;
   list-style: none;
@@ -97,12 +94,13 @@ nav {
     margin-left: 75px;
     width: 30px;
     height: 30px;
-    margin-top: -82px;
+    margin-top: -75px;
   }
   #icones {
     margin-left: 66%;
     margin-top: -70px;
   }
+  
 
   nav ul {
     position: absolute;
@@ -135,7 +133,7 @@ nav {
 }
 
 body {
-  background: #eee !important;
+  background-color: #ffc1bb !important;
 }
 
 .interna-login {

@@ -9,6 +9,7 @@ var array_Depoimentos =  [["../img/joao.jpg", "João Lucas Silva ", "Lorem ipsum
 
 
 $(document).ready(function(){
+    listaDepoimentos();
     console.log(array_Depoimentos)
     $("#label").click(function(){
         $('ul').toggleClass('show')
@@ -23,7 +24,7 @@ $(document).ready(function(){
 
    
     qtdeCarrinho();
-    listaDepoimentos();
+    
 
 });
 function listaDepoimentos(){
