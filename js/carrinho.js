@@ -1,7 +1,14 @@
 var banco = window.localStorage;
+var users = window.localStorage;
 var numeroItens = JSON.parse(banco.getItem("dadosProdutos"));
+var contasStorage = localStorage.getItem("contasStorage");
 $(document).ready(function(){
-
+    contasStorage = JSON.parse(contasStorage);
+     /* verificacao para ver se o local storage está vazio, e se estiver inicia-lo como um array */ 
+     if (contasStorage == null){
+        contasStorage = [];
+    }
+    
     $("#label").click(function(){
         $('ul').toggleClass('show')
     });
@@ -9,8 +16,21 @@ $(document).ready(function(){
         $('#carousel').toggleClass('esconde')
     });
 
-    $("#carrinho").click(function(){
-        
+    $("#bAdicionarCarrinho").click(function(){
+        if(contasStorage == "")
+            alert("Você precisa estar logado para fazer uma compra!")
+        if(contasStorage[0][5] == true){
+            if(numeroItens.length >= 1){
+                window.open('https://pag.ae/7WB69MQ7H/button', '_blank');
+                window.localStorage.clear();
+                location.reload();
+            }
+            else
+                window.alert("O seu carrinho está vazio!")
+        }
+        else{
+            alert("Você precisa estar logado para fazer uma compra!")
+        }
     });
 
     
