@@ -10,6 +10,7 @@ var array_Depoimentos =  [["img/joao.jpg", "João Lucas Silva ", "Lorem ipsum do
                         ["img/augusto.jpg", "Augusto Nascimento", "Cras congue molestie mollis. Vivamus sed sapien vel tortor vehicula congue. Quisque congue ante in vehicula venenatis. Pellentesque vel quam elit. Morbi cursus lobortis iaculis. "]];
 
 $(document).ready(function(){
+    listaDepoimentos();
     
     initMap();
     function atualizarInformacoes(){
@@ -56,7 +57,7 @@ $(document).ready(function(){
     eventosClick();
     
     qtdeCarrinho();
-    listaDepoimentos();
+    
 
 });
 function initMap() {

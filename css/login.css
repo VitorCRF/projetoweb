@@ -2,6 +2,9 @@
 .html-style {
   background-color: #ffc1bb;
 }
+body{
+  background-color: #ffc1bb;
+}
 * {
   text-decoration: none;
   list-style: none;

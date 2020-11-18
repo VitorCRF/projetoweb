@@ -58,6 +58,18 @@ a.active, ul li a:hover{
     margin-top: 9.6px;
 }
 
+/* Video */
+#video{
+    width: 855;
+    height: 481;
+    text-align: center;
+}
+iframe{
+    width: 855;
+    height: 481;
+    text-align: center;
+}
+
 /* Divs style */ 
 
 .menu{
@@ -70,7 +82,6 @@ a.active, ul li a:hover{
     
 }
 #video {
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     margin: 0 auto;
     width: 50%;
     height: 360px;
@@ -482,5 +493,15 @@ nav{
         border-radius: 10px;
         position: relative;
         margin-top: 190px;
+    }
+    #video{
+        width: 425;
+        height: 240.5;
+        text-align: center;
+    }
+    iframe{
+        width: 425;
+        height: 240.5;
+        text-align: center;
     }
 }

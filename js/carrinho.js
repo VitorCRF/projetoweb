@@ -17,7 +17,9 @@ $(document).ready(function(){
     });
 
     $("#bAdicionarCarrinho").click(function(){
-        if(contasStorage == "")
+        if(numeroItens.length <1)
+            alert("Seu carrinho está vazio!")
+        else if(contasStorage == "")
             alert("Você precisa estar logado para fazer uma compra!")
         if(contasStorage[0][5] == true){
             if(numeroItens.length >= 1){
