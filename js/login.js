@@ -1,3 +1,4 @@
+var logado = false;
 $(document).ready(function () {
   $("#label").click(function () {
     $("ul").toggleClass("show");
@@ -8,30 +9,7 @@ $(document).ready(function () {
 
   $("#carrinho").click(function () {});
 
-  $("#produtos").click(function () {
-    $("#produtos").addClass("active");
-    $("#home").removeClass("active");
-    $("#depoimentos").removeClass("active");
-    $("#servicos").removeClass("active");
-  });
-  $("#home").click(function () {
-    $("#home").addClass("active");
-    $("#produtos").removeClass("active");
-    $("#depoimentos").removeClass("active");
-    $("#servicos").removeClass("active");
-  });
-  $("#depoimentos").click(function () {
-    $("#depoimentos").addClass("active");
-    $("#produtos").removeClass("active");
-    $("#home").removeClass("active");
-    $("#servicos").removeClass("active");
-  });
-  $("#servicos").click(function () {
-    $("#servicos").addClass("active");
-    $("#produtos").removeClass("active");
-    $("#home").removeClass("active");
-    $("#depoimentos").removeClass("active");
-  });
+
 
   $("#botao-cadastre-se").click(function () {
     window.location.href = "cadastro.html";
@@ -53,14 +31,16 @@ $(document).ready(function () {
     for(var i = 0; i < users.length; i++){
 
       if (users[i][1] === email && users[i][2] === senha){
-        var login = true
+        logado = true
         alert("login realizado")
-      }
-      else{
-
+        window.location.href = "../index.html";
+        users.append(logado);
+        
       }
 
     }
+    if (logado == false)
+    alert("Usuario ou senha incorretos")
 
   });
 

@@ -70,11 +70,9 @@ a.active, ul li a:hover{
     
 }
 #video {
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     margin: 0 auto;
     width: 50%;
     height: 360px;
-    text-align: center;
 }
 nav{
     width: 100%;
@@ -162,20 +160,6 @@ nav{
 .tr-social-media{
     padding-top: 20px;
 }
-
-
-
-
-
-/* Icons style */
-
-
-.icon-redes-sociais{
-
-}
-
-
-
 
 /* Images style */
 .imagem-logo{
@@ -482,5 +466,15 @@ nav{
         border-radius: 10px;
         position: relative;
         margin-top: 190px;
+    }
+    #video{
+        width: 425;
+        height: 240.5;
+        
+    }
+    #iframe{
+        width: 425;
+        height: 240.5;
+        
     }
 }
